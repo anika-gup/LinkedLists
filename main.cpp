@@ -9,6 +9,8 @@ using namespace std;
 // by anika gupta
 //linked lists 11/17/2023
 int main() {
+
+  // testing that the stuff works-----------------------------------
   Student* student = new Student(); // creating a student
   student->setID(111); // setting ID of student (for testing purposes)
   Node* myNode = new Node(student); //creating first Node
@@ -19,5 +21,6 @@ int main() {
   myNode->setNext(nextNode); //setting 2nd node as nextnode for 1st node
   cout << myNode->getNext()->getStudent()->getID() << endl; // testing the getNext and setNext for Node by printing out ID of original Node's getNext student
   nextNode->~Node(); // deleting nextNode
+  //end testing section----------------------
   return 0;
 }
